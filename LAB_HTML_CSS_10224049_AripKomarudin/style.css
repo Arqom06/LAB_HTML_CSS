@@ -1,0 +1,104 @@
+
+/* Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #243047;
+    background-color: #f3f6fb;
+}
+
+/* Bagian header */
+header {
+    background: linear-gradient(135deg, #123b70, #168aad);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #0b2545;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Isi halaman */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    color: #1261a0;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Bagian bawah */
+footer {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}

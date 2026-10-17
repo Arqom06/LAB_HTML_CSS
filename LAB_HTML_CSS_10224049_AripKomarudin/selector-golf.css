@@ -1,0 +1,30 @@
+
+/* Type selector */
+p {
+    color: blue;
+}
+
+/* Descendant selector */
+section p {
+    color: green;
+}
+
+/* Class selector */
+.note {
+    color: orange;
+}
+
+/* ID selector */
+#tech p {
+    font-weight: bold;
+}
+
+/* Grouping selector */
+h1, h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: red;
+}
