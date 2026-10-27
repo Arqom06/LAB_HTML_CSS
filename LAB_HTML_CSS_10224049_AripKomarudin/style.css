@@ -1,5 +1,5 @@
 
-/* Pengaturan dasar halaman */
+/* Pengaturan dasar */
 * {
     box-sizing: border-box;
 }
@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Type selector */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,89 +17,173 @@ body {
     background-color: #f3f6fb;
 }
 
-/* Bagian header */
+/* ID selector */
+#about,
+#programs,
+#facilities,
+#events,
+#contact {
+    scroll-margin-top: 90px;
+}
+
+/* Header */
 header {
     background: linear-gradient(135deg, #123b70, #168aad);
     color: white;
     text-align: center;
-    padding: 55px 20px;
+    padding: 40px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 42px;
+    font-size: 38px;
 }
 
-header p {
-    margin-bottom: 0;
-    font-size: 18px;
-}
-
-/* Menu navigasi */
+/* Navigasi dengan Flexbox */
 nav {
     background-color: #0b2545;
-    padding: 16px;
-    text-align: center;
+    padding: 14px 20px;
     position: sticky;
     top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
+/* Pseudo-class selector */
 nav a:hover {
     color: #ffd166;
+    text-decoration: underline;
 }
 
-/* Isi halaman */
-main {
-    max-width: 1000px;
-    margin: 35px auto;
-    padding: 0 20px;
-}
-
-section {
+/* Class selector */
+.card {
     background-color: white;
-    margin-bottom: 25px;
-    padding: 28px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-    scroll-margin-top: 80px;
+    padding: 16px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    margin-bottom: 24px;
 }
 
-section h2 {
+/* Descendant selector */
+main section h2 {
     color: #1261a0;
     margin-top: 0;
 }
 
-li {
-    margin-bottom: 8px;
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 20px;
 }
 
-/* Bagian bawah */
+section {
+    background-color: white;
+    padding: 16px;
+    border: 1px solid #d5dce5;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dbeafe;
+}
+
+/* Gambar */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Formulir */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #aab5c4;
+    border-radius: 5px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1261a0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b2545;
+}
+
+/* Grouping selector */
+header h1,
+section h2 {
+    font-family: Arial, sans-serif;
+}
+
+/* Footer */
 footer {
     background-color: #0b2545;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 16px;
+    font-size: 14px;
 }
 
-/* Tampilan HP */
+/* Tampilan layar kecil */
 @media (max-width: 600px) {
     header h1 {
         font-size: 30px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
+    nav ul {
+        gap: 12px;
     }
 
-    section {
-        padding: 20px;
+    main {
+        padding: 16px;
+    }
+
+    table {
+        font-size: 14px;
     }
 }
